@@ -98,8 +98,8 @@ class EventCreatorApp(MDApp):
 
         self.client = DAVClient(
             "https://caldav.icloud.com/",
-            username="ethansmasters@outlook.com",
-            password="qges-nfnn-qvsa-xdgx",
+            username="apple-user-email",
+            password="apple-dev-key",
         )
         self.principal = self.client.principal()
         self.calendars = self.principal.calendars()
