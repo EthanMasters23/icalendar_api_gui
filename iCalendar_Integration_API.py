@@ -165,7 +165,7 @@ class EventCreatorApp(MDApp):
                 "METHOD:PUBLISH\n"
                 "BEGIN:VEVENT\n"
                 f"UID:{datetime.now(tz=timezone.utc).timestamp()}\n"
-                f"SEQUENCE:{str(0)}\n" # Increment every time the event is updated
+                f"SEQUENCE:{str(0)}\n"
                 "STATUS:CONFIRMED\n" # TENTATIVE/CONFIRMED/CANCELLED
                 "TRANSP:TRANSPARENT\n" # OPAQUE: Blocks Availability / TRANSPARENT: Does not block availability
                 f"DTSTAMP:{datetime.now(tz=timezone.utc).strftime('%Y%m%dT%H%M%SZ')}\n"
