@@ -12,14 +12,12 @@ from kivy.uix.popup import Popup
 from datetime import datetime, timezone
 from caldav import DAVClient
 
-# Set default window properties
 Window.clearcolor = (0, 0, 0, 1)
 Window.size = (600, 400)
 
-# Register Orbitron font
 LabelBase.register(name="Orbitron", fn_regular="Orbitron/static/Orbitron-Bold.ttf")
 
-# KV string for the UI layout
+# UI Design Below
 KV = '''
 MDScreen:
     md_bg_color: app.theme_cls.bg_normal
@@ -85,6 +83,7 @@ MDScreen:
             text_color: app.NEON_BLUE
 '''
 
+# MDApp Instane
 class EventCreatorApp(MDApp):
 
     NEON_TEAL = (0.0, 1.0, 1.0, 1.0)
